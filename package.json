@@ -1,0 +1,22 @@
+{
+  "name": "dsh-body",
+  "version": "0.1.0",
+  "description": "给 AI 伴侣一个一直在跑的「身体」：常驻进程记录时间与事件、盯着外部消息，有事才叫醒模型。",
+  "meta": {
+    "title": "身体",
+    "description": "一个常驻的小进程：一直在、记时间、看外面，有事才叫模型。"
+  },
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": {
+      "default": "./index.js"
+    }
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,15 @@
+# dsh-body —— 身体
+#
+# 只插一行 host 条目；可调项都在这里，升级插件不会覆盖。
+- insert:
+    - id: body
+      name: 'dsh-body'
+      config:
+        # 事件本写在哪（只追加，一行一个 JSON）
+        file: ''
+        # 状态文件（活着/跑了多久/最后一次喊醒是什么时候）
+        stateFile: ''
+        # 本地 HTTP 端口（问它「你还在吗」用）
+        port: 8771
+        # 多久更新一次状态（秒）
+        tickSeconds: 30
